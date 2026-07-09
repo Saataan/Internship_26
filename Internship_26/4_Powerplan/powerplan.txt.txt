@@ -1,0 +1,21 @@
+====================================================================
+STAGE 4: POWER PLANNING (CADENCE INNOVUS)
+====================================================================
+
+This folder contains:
+- VDD/VSS Power Ring and Stripe Specifications
+- Power Grid Verification Reports
+- Power Plan Layout Screenshot
+
+Tools Used:
+- Cadence Innovus 
+
+Workflow:
+1. Designed global VDD and VSS power rings around the core boundary.
+2. Interleaved vertical and horizontal power stripes to distribute supply current.
+
+
+Learning Outcomes:
+- Mastered structural power planning networks to ensure uniform voltage delivery.
+- Learned how robust power grids prevent local IR voltage drops across a running chip.
+====================================================================

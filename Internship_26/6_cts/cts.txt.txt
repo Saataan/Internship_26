@@ -1,0 +1,17 @@
+====================================================================
+STAGE 6: CLOCK TREE SYNTHESIS - CTS (CADENCE INNOVUS)
+====================================================================
+
+This folder contains:
+- Clock Skew & Latency Reports
+- Post-CTS Timing Hold Reports
+- Clock Tree Distribution Screenshot
+
+Tools Used:
+- Cadence Innovus
+
+Workflow:
+1. Created a tree balanced distribution network targeting all sequential components.
+
+Learning Outcomes:
+- Understood the severe impact of clock skew on physical sequential circuit stability.

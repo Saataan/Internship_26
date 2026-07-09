@@ -1,0 +1,21 @@
+====================================================================
+STAGE 2: LOGIC SYNTHESIS (CADENCE GENUS)
+====================================================================
+
+This folder contains:
+- Timing Constraints (.sdc)
+- Synthesis Reports (Area, Gates, Timing)
+- Gate-Level Schematic Screenshot
+
+Tools Used:
+- Cadence Genus 
+
+Workflow:
+1. Loaded the design files and target technology libraries.
+2. Applied timing and area constraints via the SDC file.
+3. Synthesized and optimized the design into a concrete gate-level netlist.
+
+Learning Outcomes:
+- Learned how to integrate physical I/O boundary cells into the design flow.
+- Understood how constraints (.sdc) directly dictate gate-sizing and timing paths.
+====================================================================

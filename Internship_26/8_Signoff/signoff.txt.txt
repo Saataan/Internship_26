@@ -1,0 +1,21 @@
+====================================================================
+STAGE 8:  SIGNOFF (CADENCE INNOVUS)
+====================================================================
+
+This folder contains:
+- DRC Layout Verification Summary
+- Chip GDS Stream Metadata Reference
+- Final Fully Routed Layout Signoff Screenshot
+
+Tools Used:
+- Cadence Innovus
+
+Workflow:
+1. Ran final Design Rule Checks (DRC) to confirm adherence to foundry geometric constraints.
+2. Verified manufacturing rule compliance across all metal and boundary layers.
+3. Generated final verification logs to clear the design layout geometry for tape-out.
+
+Learning Outcomes:
+- Learned to debug and clear complex DRC physical layout violations.
+- Understood how manufacturing constraint rules dictate physical layout limits.
+====================================================================

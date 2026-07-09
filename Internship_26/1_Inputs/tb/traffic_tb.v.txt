@@ -1,0 +1,83 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Module Name: traffic_light_controller_tb
+// Description: Testbench for traffic_light_controller 
+//              Tests: Normal cycling
+//////////////////////////////////////////////////////////////////////////////////
+
+module traffic_light_controller_tb;
+
+    // -------------------------------------------------------
+    // 1. Signals
+    // -------------------------------------------------------
+    reg        clk;
+    reg        rst;
+    
+    
+
+    wire [2:0] East_road;
+    wire [2:0] North_road;
+    wire [2:0] West_road;
+    wire [2:0] South_road;
+
+    // -------------------------------------------------------
+    // 2. UUT Instance
+    // -------------------------------------------------------
+    traffic_light_controller uut (
+        .clk       (clk),
+        .rst       (rst),
+        
+     
+        .East_road (East_road),
+        .North_road(North_road),
+        .West_road (West_road),
+        .South_road(South_road)
+    );
+
+    // -------------------------------------------------------
+    // 3. Clock: 10ns period (100MHz)
+    // -------------------------------------------------------
+    initial clk = 0;
+    always #5 clk = ~clk;
+
+    // -------------------------------------------------------
+    // 4. Stimulus
+    // -------------------------------------------------------
+    initial begin
+        // --- Initialize ---
+        rst       = 0;
+       
+
+        // Release reset at 20ns
+        #20;
+        rst = 1;
+        $display("[%0t] Reset released. Normal cycling begins. State=east_green expected.", $time);
+
+        // -------------------------------------------------------
+        // CONDITION 1: Normal Sequential Cycling
+        // Let East complete full green+yellow, then North begins
+        // East green  : 20 cycles x 10ns = 200ns  (20ns -> 220ns)
+        // East yellow :  4 cycles x 10ns =  40ns  (220ns -> 260ns)
+        // North green starts at 260ns
+        // -------------------------------------------------------
+        #5000;
+       
+        rst=0;
+        #20;
+        rst=1;
+        #100;
+        $display("[%0t] Simulation complete.", $time);
+        $finish;
+    end
+
+    // -------------------------------------------------------
+    // 5. Monitor: prints every time any signal changes
+    // -------------------------------------------------------
+    initial begin
+        $monitor("[%0t] state=%b count=%02d | E=%b N=%b W=%b S=%b ",
+                 $time,
+                 uut.state, uut.count,
+                 East_road, North_road, West_road, South_road);
+    end
+
+endmodule

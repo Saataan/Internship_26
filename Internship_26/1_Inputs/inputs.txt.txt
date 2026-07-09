@@ -1,0 +1,27 @@
+## Files Included
+
+### Source Code & Testbenches
+- `traffic.v` - Verilog module implementing the 4-way traffic light controller with sequential state transitions and clock division.
+- `traffic_tb.v` - Testbench used to verify the state timing and emergency preemption functionality.
+
+---
+
+## Tools Used
+- Verilog HDL
+- Cadence Xcelium
+
+---
+
+## Workflow
+1. Developed the RTL design for the traffic light logic in Verilog.
+2. Created a testbench to generate input stimuli (including reset trigger).
+3. Simulated the design and verified the behavioral output timing waveforms.
+
+---
+
+## Learning Outcomes
+- Learned to write synthesizable finite state machine (FSM) logic in Verilog.
+- Understood the importance of testbenches in isolating timing bugs early.
+
+---
+

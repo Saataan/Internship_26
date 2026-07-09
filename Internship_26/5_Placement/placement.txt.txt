@@ -1,0 +1,20 @@
+====================================================================
+STAGE 5: STANDARD CELL PLACEMENT (CADENCE INNOVUS)
+====================================================================
+
+This folder contains:
+- Cell Density & Congestion Reports
+- Placement Layout Screenshot
+
+Tools Used:
+- Cadence Innovus 
+
+Workflow:
+1. Automated the coordinate assignments for all standard logic gates and registers.
+2. Iterated cell positions to minimize total wirelength and cell delay.
+
+
+Learning Outcomes:
+- Gained insight into how physical placement affects overall cell delays and timing closure.
+- Learned to monitor cell density constraints to ensure design rule check (DRC) compliance.
+====================================================================

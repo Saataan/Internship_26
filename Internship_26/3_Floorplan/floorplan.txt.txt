@@ -1,0 +1,20 @@
+====================================================================
+STAGE 3: FLOORPLANNING (CADENCE INNOVUS)
+====================================================================
+
+This folder contains:
+- Core and Die Boundary Configurations
+- I/O Pin and Pad Placement Constraints
+- Floorplan Layout Screenshot
+
+Tools Used:
+- Cadence Innovus I
+
+Workflow:
+1. Initialized the physical core dimensions, aspect ratio, and row structure.
+2. Arranged and locked the physical I/O pad cells along the perimeter ring.
+
+Learning Outcomes:
+- Learned how core-to-die spacing and peripheral pin placement define the chip boundary.
+- Understood how row structure initialization prepares the die for standard cells.
+====================================================================

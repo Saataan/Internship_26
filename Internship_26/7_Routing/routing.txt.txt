@@ -1,0 +1,15 @@
+This folder contains:
+- Metal Interconnect Layer Specifications
+- Wire Routing Density Layout Screenshot
+
+Tools Used:
+- Cadence Innovus 
+
+Workflow:
+1. Executed global routing to outline general signal pathways across routing tracks.
+2. Completed detail routing to physically lock down precise metal layer connections.
+3. Verified connectivity paths to ensure optimal signal integrity.
+
+Learning Outcomes:
+- Mastered the layout concepts of routing grids and metal layers.
+- Understood how detail routing tools optimize track utilization to avoid layout shorts.
